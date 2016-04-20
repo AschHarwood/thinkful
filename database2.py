@@ -33,13 +33,5 @@ with con:
     warmcities = ' ,'.join(warmcitieslist)
   
 
-
-#print dftotuple
-print dfvalues
-#print(df)
-
-#warmcities = ''.join(dfvalues)
-#for city, state in dfvalues:
-#   warmcities.append(city)
 print "The warmest cities in July are %s" % warmcities
 
