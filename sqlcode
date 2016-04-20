@@ -1,0 +1,9 @@
+SELECT name, state, year, warm_month, cold_month FROM cities INNER JOIN weather ON name = city;
+
+SELECT warm_month, AVG(average_high) FROM weather GROUP BY warm_month;
+
+SELECT state, AVG(average_high) FROM weather INNER JOIN cities ON name = city GROUP BY state ORDER BY average_high;
+
+SELECT warm_month, AVG(average_high) FROM weather GROUP BY warm_month HAVING AVG(average_high) > 65;
+
+SELECT state, AVG(average_high) FROM weather ORDER BY AVG(average_high) INNER JOIN cities ON name = city GROUP BY state HAVING AVG(average_high) > 65;
